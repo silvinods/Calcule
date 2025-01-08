@@ -1,0 +1,96 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: 
+    linear-gradient(217deg, rgb(14, 14, 14), transparent 70%),
+    linear-gradient(127deg, rgba(8, 8, 8, 0.8), transparent 70%),
+    linear-gradient(336deg, rgba(10, 10, 10, 0.967), transparent 70%);
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.form-container{
+ overflow: hidden;
+    width: 280px;
+    height: 430px;
+    background-image: linear-gradient(to right top, #111112fb, #0f0e2e);
+    border-radius: .8em;
+    padding: .8em;
+    box-shadow: 1em 1em  .1em #4a4947ad;
+}
+
+.form-container .display{
+    height: 22%;
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container .display >.data__time{
+color: #f8f8ff;
+width: 95%;
+display: flex;
+justify-content: space-between;
+}
+.form-container .display .value{
+    height: 50%;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+    border: none;
+    color: #f8f8ff;
+    text-align: right;
+    background-color: transparent;
+}
+.form-container .buttons{
+    border-top: 1px solid #808080 ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+.form-container .buttons .buttom{
+   width: 60px;
+    height:47px;
+    border: 2px solid #808080;
+    border-radius: 35%;
+    background-color: #02020f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.form-container .buttons .buttom:active{
+    font-size:1.5rem;
+}
+.form-container .buttons .buttom__operation{
+    color: #00ff00;
+}
+.form-container .buttons .buttom__operation__number{
+    color: #f8f8ff;
+}
+#sum{
+    grid-row: span 2;
+    height: 94px;
+    border-radius: 20%;
+}
+#igual{
+    color:#f8f877;
+    background-color: #008000;
+    border-color: #008000;
+}
+#clear{
+    color: tomato;
+    grid-column: span 2;
+    width: 120px;
+    border-radius: 20%;
+}
